@@ -61,11 +61,16 @@ main {
 
 .meme {
   position: relative;
+  display: grid;
+  justify-items: center;
 }
 
 .meme--image {
-  max-width: 100%;
+  
   border-radius: 3px;
+  margin: 0 auto;
+  width: 380px;
+  height: 350px;
 }
 
 .meme--text {
@@ -99,4 +104,15 @@ main {
 
 .top {
   top: 0;
+}
+
+@media (max-width: 420px){
+  .meme--image, .form--button{
+    width: 100%;
+  }
+
+  .form--input{
+    margin: 0 auto;
+    width: 100%;
+  }
 }

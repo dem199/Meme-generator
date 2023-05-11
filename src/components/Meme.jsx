@@ -1,7 +1,7 @@
 import 'regenerator-runtime/runtime';
 import React from "react"
 
-export default function Meme() {
+function Meme() {
     const [meme, setMeme] = React.useState({
         topText: "",
         bottomText: "",
@@ -65,3 +65,6 @@ export default function Meme() {
         </main>
     )
 }
+
+
+export default Meme
